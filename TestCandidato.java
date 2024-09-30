@@ -11,6 +11,7 @@ public class TestCandidato {
         int numero, qtdNumeros;
         String nome;
 
+        // Sistema de cadastramento
         System.out.println("Cadastramento de Candidato, por favor insira as informações abaixo: ");
         for(int i = 1; i <= 2; i++) {
             System.out.println("Candidato " + i + ": ");
@@ -58,6 +59,7 @@ public class TestCandidato {
            }
         }
 
+        // Exibir candidatos
         for(Candidato e : listCandidatos) {
             e.exibirCandidatos();
         }
