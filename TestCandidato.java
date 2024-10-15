@@ -13,7 +13,7 @@ public class TestCandidato {
 
         // Sistema de cadastramento
         System.out.println("Cadastramento de Candidato, por favor insira as informações abaixo: ");
-        for(int i = 1; i <= 2; i++) {
+        for(int i = 1; i <= 3; i++) {
             System.out.println("Candidato " + i + ": ");
             System.out.println("===+===+===+===");
             System.out.println("Nome: ");
@@ -29,7 +29,7 @@ public class TestCandidato {
                 }
             }
             if(verificador) {
-                System.out.println("Número eleitoral já cadastrado");
+                System.out.println("Número eleitoral já cadastrado.");
                 i--;
                 continue;
             }
@@ -56,6 +56,7 @@ public class TestCandidato {
            }
            if(!encontrou) {
                System.out.println("Número inserido (" + votoNumero + ") é inválido.");
+               qtdNumeros++;
            }
         }
 
